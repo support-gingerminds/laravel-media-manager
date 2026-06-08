@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gingerminds\LaravelMediaManager\Database;
+namespace Gingerminds\LaravelMediaManager\Database\Seeders;
 
 use Gingerminds\LaravelMediaManager\Database\Seeders\PermissionSeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
