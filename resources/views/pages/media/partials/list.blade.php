@@ -14,7 +14,7 @@
                         data-remove-name="{{ $media->name ?? $media->id }}"
                         data-destroy-url="{{ route('gingerminds-media-manager.medias.destroy', $media) }}"
                 >
-                    <i class="bx-i bi-trash"></i>
+                    <i class="bi-i bi-trash"></i>
                 </button>
             </div>
         </td>

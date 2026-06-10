@@ -68,10 +68,13 @@ class Media extends Model implements ResourceModelInterface
 
     public const string GROUP_READ = 'media:read';
 
-    protected $fillable = [
-        'name',
-        'file_name',
-        'mime_type',
-        'size',
-    ];
+    public function getFillable(): array
+    {
+        return [
+            'name',
+            'file_name',
+            'mime_type',
+            'size',
+        ];
+    }
 }
