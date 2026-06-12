@@ -29,7 +29,7 @@ class LaravelMediaManagerServiceProvider extends ServiceProvider
             'gingerminds-media-manager'
         );
 
-        $glide = require __DIR__ . '/../../config/filesystems.php';
+        $glide = require_once __DIR__ . '/../../config/filesystems.php';
 
         config([
             'filesystems.disks.glide' => $glide['disks']['glide'],
