@@ -11,6 +11,7 @@ use ApiPlatform\Metadata\GetCollection;
 use Gingerminds\LaravelCore\Models\FilterableModelInterface;
 use Gingerminds\LaravelCore\Models\ResourceModelInterface;
 use Gingerminds\LaravelMediaManager\ApiProvider\Media\MediaProvider;
+use Gingerminds\LaravelMediaManager\Models\Basket\Basket;
 use Gingerminds\LaravelMediaManager\Models\File\File;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -33,17 +34,20 @@ use Symfony\Component\Serializer\Attribute\Groups;
     serialize: new Groups([
         Media::GROUP_LIST,
         Media::GROUP_READ,
+        Basket::GROUP_READ
     ])
 )]
 #[ApiProperty(property: 'name', serialize: new Groups([
     Media::GROUP_LIST,
     Media::GROUP_READ,
+    Basket::GROUP_READ
 ]))]
 #[ApiProperty(
     property: 'file_reference',
     serialize: new Groups([
         Media::GROUP_LIST,
         Media::GROUP_READ,
+        Basket::GROUP_READ
     ]),
 )]
 class Media extends Model implements ResourceModelInterface, FilterableModelInterface
