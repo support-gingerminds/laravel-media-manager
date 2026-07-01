@@ -28,7 +28,7 @@
     cursor: pointer;
 
     &:hover {
-        background: #f8f9fa;
+        background: #f9f9f9;
     }
 
     &.is-selected {
@@ -46,7 +46,7 @@
 }
 
 .media-select-chip {
-    border-color: #dee2e6;
+    border-color: #f1f2f4;
 
     [data-role="preview"][data-sortable] & {
         cursor: grab;
